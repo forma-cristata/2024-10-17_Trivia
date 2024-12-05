@@ -1,0 +1,85 @@
+
+
+
+html
+{
+    font-family: spook;
+}
+
+.wordsearch {
+    display: flex;
+}
+
+.wordsearch-last-letter {
+    display: flex;
+}
+
+input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+} /* this keeps the input accessible. Don't just display: none */
+
+input:checked + span {
+    background-color: #000;
+    color: #fff;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 40px;
+    border: 1px solid #000;
+    border-right: 0;
+    background-color: #b21717;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+label:last-of-type span {
+    border-right: 1px solid #000;
+}
+
+[data-bs-theme=dark] {
+    --bs-body-color: #BF65B0 !important;
+    --bs-body-bg: #300755 !important;
+    --bs-emphasis-color: #BF65B0 !important;
+    --bs-secondary-color: #7A4F8C !important;
+    --bs-secondary-bg: #BF7665 !important;
+    --bs-secondary-border-subtle: #A62940 !important;
+    --bs-light-border-subtle: #A62940 !important;
+    --bs-dark-border-subtle: #F2BDE9 !important;
+    --bs-heading-color: #a52940;
+    --bs-border-color: #A62940 !important;
+}
+.btn-primary {
+    --bs-btn-bg: #7A4F8C !important;
+    --bs-btn-border-color: #A62940 !important;
+    --bs-btn-hover-bg: #F2BDE9 !important;
+    --bs-btn-hover-border-color: #A62940 !important;
+    --bs-btn-active-border-color: #A62940 !important;
+    --bs-btn-disabled-bg: #036873 !important;
+    --bs-btn-disabled-border-color: #A62940 !important;
+}
+.btn{
+    --bs-btn-font-size: 2vh !important;
+}
+button{
+    border: 1px solid #7A4F8C !important;
+}
+html,
+.font-monospace
+{
+    font-size: 2.8vh !important;
+}
+
+#form-check-label,
+.btn:hover,
+.btn:focus {
+    background-color: #641d30 !important;
+    transform: scale(1.1);
+    transition: background-color 750ms;
+}
