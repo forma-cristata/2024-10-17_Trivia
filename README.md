@@ -1,4 +1,4 @@
-# Halloween PHP Quiz
+# Halloween Quiz
 
 A dynamic web application that creates an interactive quiz experience for users. Built with PHP, this application presents a mix of multiple-choice and short-answer questions, providing instant feedback and scoring.
 
